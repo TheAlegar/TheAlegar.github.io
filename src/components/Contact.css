@@ -1,0 +1,22 @@
+label{
+    color: white;
+  }
+
+.label{
+    color: white;
+  }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; 
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+}
+
+
+.form {
+  /* height: 80%; */
+  width: 80%;
+}
