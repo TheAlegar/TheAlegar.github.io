@@ -1,8 +1,24 @@
-import * as React from 'react';
+// import * as React from 'react';
+import React, { useState } from 'react';
 import ImageList from '@mui/material/ImageList';
 import Grid from '@mui/material/Grid';
 import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
 import Paper from '@mui/material/Paper';
+// import { makeStyles } from '@material-ui/styles';
+
+// const useStyles = makeStyles({
+//   root: {
+//     // maxWidth: 310,
+//     transition: "transform 0.15s ease-in-out",
+//     "&:hover": { transform: "scale3d(1.05, 1.05, 1)", },
+//   },
+//   active: {
+//     transition: "transform 0.15s ease-in-out",
+//     transform: "scale3d(1.05, 1, 1)",
+//   },
+// });
+
 
 const importAll = (r) => {
     return r.keys().map(r);
@@ -11,27 +27,41 @@ const importAll = (r) => {
 const clients = importAll(require.context('./images/clients', false, /\.(png|jpe?g|svg)$/));
 
 export default function Clients() {
+  // const classes = useStyles();
+
+  const titleFormat = (title) =>{
+    const url = title.split('/static/media/');
+    return url[1].split('-')[0];
+  }
+  const [mode, setMode] = useState('');
   return (
     <Paper
     sx={{
       position: 'relative',
       backgroundColor: 'grey.800',
       color: '#fff',
-      mb: 4,
-      height: '1000px',
+      mb: 1,
+      // height: '1000px',
     }}
   >
     <Grid container style={{display:'flex',justifyContent:'center',alignItems:'center'}} >
         <Grid item>
-            <ImageList sx={{ width: 1000, height: 1000 }} cols={5} rowHeight={300}>
+            <ImageList  cols={5} rowHeight={800}>
             {clients.map((item) => (
-                <ImageListItem key={item}>
+                <ImageListItem key={item}  >
                 <img
-                    srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                    src={`${item}?w=164&h=164&fit=crop&auto=format`}
+                    srcSet={`${item}`}
+                    src={`${item}`}
                     loading="lazy"
                     alt=''
-                />
+                    onMouseOver={() => (setMode(item))}
+                    onMouseLeave={() => (setMode(''))}
+                /> 
+                {mode === item && 
+                 <ImageListItemBar
+                  key={item}
+                  title={titleFormat(item)}
+                />}
                 </ImageListItem>
             ))}
             </ImageList>

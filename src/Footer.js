@@ -9,7 +9,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Footer() {
   return (
-    <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }}>
+    <Box component="footer" sx={{ bgcolor: 'background.paper', py: 2 }}>
       <Container maxWidth="lg">
         <Typography variant="body2" color="text.secondary" align="center">
           <IconButton href="https://www.instagram.com/jonthephenomenon/">
@@ -22,7 +22,7 @@ export default function Footer() {
         <Typography variant="body2" color="text.secondary" align="center">
           {'Copyright © '}
           <Link color="inherit" href="">
-            JONPRODUCTION
+            Phenom Productions LLC
           </Link>{' '}
           {new Date().getFullYear()}
           {'.'}

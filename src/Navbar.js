@@ -95,8 +95,16 @@ export default function Navbar() {
             onClose={handleWorkClose}
         >
             <MenuItem component={RouterLink} to="/clients" onClick={handleWorkClose}>Clients</MenuItem>
-            <MenuItem component={RouterLink} to="" onClick={handleWorkClose}>Shows</MenuItem>
+            <MenuItem component={RouterLink} to="/shows" onClick={handleWorkClose}>Shows</MenuItem>
         </Menu>
+        <Link
+            variant="button"
+            color="inherit"
+            component={RouterLink} to="/contact"
+            sx={{ my: 1, mx: 1.5 }}
+            >
+            Contact ME
+            </Link>
         <Link
             aria-controls="more-menu"
             aria-haspopup="true" onClick={handleMoreClick}
@@ -114,8 +122,8 @@ export default function Navbar() {
             open={Boolean(moreanchorEl)}
             onClose={handleMoreClose}
         >
-            <MenuItem component={Link} href="#" onClick={handleMoreClose}>Media</MenuItem>
-            <MenuItem component={Link} href="#" onClick={handleMoreClose}>Extra</MenuItem>
+            <MenuItem component={RouterLink} to="/media" onClick={handleMoreClose}>Media</MenuItem>
+            <MenuItem  component={RouterLink} to="/extra" onClick={handleMoreClose}>Extra</MenuItem>
         </Menu>
         </nav>
         </Toolbar>

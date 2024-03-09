@@ -3,7 +3,7 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import image from './home.jpg';
+import image from './cover.jpeg';
 // MainFeaturedPost.propTypes = {
 //     post: PropTypes.shape({
 //       image: PropTypes.string.isRequired,
@@ -19,17 +19,14 @@ export default function Home() {
         position: 'relative',
         backgroundColor: 'grey.800',
         color: '#fff',
-        mb: 4,
+        mb: 1,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundImage: `url(${image})`,
-        height: '1000px',
+        height: '1100px',
       }}
     >
-      {/* Increase the priority of the hero background image */}
-      {/* {<img style={{ display: 'none' }} src="images/cover.jpeg" alt='cover' />} */}
-      {/* <img src={logo} alt='home' /> */}
       <Box
         sx={{
           position: 'absolute',
@@ -40,7 +37,7 @@ export default function Home() {
           backgroundColor: 'rgba(0,0,0,.3)',
         }}
       />
-      <Grid container >
+      <Grid container justifyContent="flex-end" >
         <Grid item md={6}>
           <Box
             alignItems="center"
