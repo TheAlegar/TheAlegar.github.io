@@ -6,6 +6,7 @@ import Link from '@mui/material/Link';
 import IconButton from '@mui/material/IconButton';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function Footer() {
   return (
@@ -17,6 +18,9 @@ export default function Footer() {
           </IconButton>
           <IconButton href="https://www.linkedin.com/in/jonmleblanc/">
             <LinkedInIcon/>
+          </IconButton>
+          <IconButton href="https://twitter.com/Jon_ThePhenom">
+            <TwitterIcon/>
           </IconButton>
         </Typography>
         <Typography variant="body2" color="text.secondary" align="center">
