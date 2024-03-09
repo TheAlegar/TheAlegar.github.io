@@ -1,12 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.dc4d6ff2.css",
-    "main.js": "/static/js/main.5029e853.js",
+    "main.js": "/static/js/main.6e16b8d9.js",
+    "static/media/cover.jpeg": "/static/media/cover.8dad12775675a7255940.jpeg",
+    "static/media/LOLLAPALOOZA.jpeg": "/static/media/LOLLAPALOOZA.0de4ae9e2c6f7c34d995.jpeg",
+    "static/media/BLXST B4YG TOUR.png": "/static/media/BLXST B4YG TOUR.9e8b0ccdfbda84f9357c.png",
+    "static/media/OKEECHOBEE FESTIVAL.jpeg": "/static/media/OKEECHOBEE FESTIVAL.00723624941bc5ca4821.jpeg",
     "static/media/Waka Flocka Flame - MON.jpg": "/static/media/Waka Flocka Flame - MON.960e09834b7bd286ef9f.jpg",
+    "static/media/EMOTIONAL ORANGES PF TOUR.jpeg": "/static/media/EMOTIONAL ORANGES PF TOUR.96f6451367e153b69f09.jpeg",
+    "static/media/SOL BLUME.jpg": "/static/media/SOL BLUME.b790f64a69306e36c404.jpg",
+    "static/media/SOMETHING IN THE WATER.jpg": "/static/media/SOMETHING IN THE WATER.8f6aab19928270a2bbd0.jpg",
     "static/media/ED SHEERAN - Broadcast Engineer .jpeg": "/static/media/ED SHEERAN - Broadcast Engineer .c6af01f1f0ad269fb58c.jpeg",
     "static/media/The Terrell Show - MON.png": "/static/media/The Terrell Show - MON.7bc39b5a6055857dcfc9.png",
+    "static/media/WIRELESS.jpg_large.jpg": "/static/media/WIRELESS.jpg_large.95eff189bd9e1f6bc674.jpg",
     "static/media/BLXST - MON _ PB.jpeg": "/static/media/BLXST - MON _ PB.cba42c900e6c3fec76bf.jpeg",
-    "static/media/home.jpg": "/static/media/home.509ba700cdfb081e8c6d.jpg",
+    "static/media/AUGUST 08.jpeg": "/static/media/AUGUST 08.f26da3923fe9ed51a95e.jpeg",
     "static/media/Moneybagg Yo - FOH.jpeg": "/static/media/Moneybagg Yo - FOH.8668fb617f489430eb18.jpeg",
     "static/media/Emotional Oranges - FOH _ MON _ PB.jpeg": "/static/media/Emotional Oranges - FOH _ MON _ PB.6b3504c0e9911e5f63d9.jpeg",
     "static/media/KYLE - MON.jpeg": "/static/media/KYLE - MON.14e7da0e287da0c85c90.jpeg",
@@ -18,10 +26,10 @@
     "static/media/1500 OR NOTHIN - MON.jpeg": "/static/media/1500 OR NOTHIN - MON.eb5668058d7fa7a12ef7.jpeg",
     "index.html": "/index.html",
     "main.dc4d6ff2.css.map": "/static/css/main.dc4d6ff2.css.map",
-    "main.5029e853.js.map": "/static/js/main.5029e853.js.map"
+    "main.6e16b8d9.js.map": "/static/js/main.6e16b8d9.js.map"
   },
   "entrypoints": [
     "static/css/main.dc4d6ff2.css",
-    "static/js/main.5029e853.js"
+    "static/js/main.6e16b8d9.js"
   ]
 }
