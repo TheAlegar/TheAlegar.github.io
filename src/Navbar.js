@@ -9,6 +9,8 @@ import MenuItem from '@mui/material/MenuItem';
 
 import {  ThemeProvider, createTheme, alpha, getContrastRatio } from '@mui/material/styles';
 
+import {Link as RouterLink } from "react-router-dom"
+
 
 
 const violetBase = '#7F00FF';
@@ -62,7 +64,7 @@ export default function Navbar() {
             <Link
             variant="button"
             color="inherit"
-            href="/"
+            component={RouterLink} to="/"
             sx={{ my: 1, mx: 1.5 }}
             >
             Home
@@ -70,7 +72,7 @@ export default function Navbar() {
             <Link
             variant="button"
             color="inherit"
-            href="/about"
+            component={RouterLink} to="/about"
             sx={{ my: 1, mx: 1.5 }}
             >
             About
@@ -92,8 +94,8 @@ export default function Navbar() {
             open={Boolean(workanchorEl)}
             onClose={handleWorkClose}
         >
-            <MenuItem component={Link} href="/clients" onClick={handleWorkClose}>Clients</MenuItem>
-            <MenuItem component={Link} href="#" onClick={handleWorkClose}>Shows</MenuItem>
+            <MenuItem component={RouterLink} to="/clients" onClick={handleWorkClose}>Clients</MenuItem>
+            <MenuItem component={RouterLink} to="" onClick={handleWorkClose}>Shows</MenuItem>
         </Menu>
         <Link
             aria-controls="more-menu"
