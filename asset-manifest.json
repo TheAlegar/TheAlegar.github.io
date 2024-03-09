@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dc4d6ff2.css",
-    "main.js": "/static/js/main.0621cb3f.js",
+    "main.js": "/static/js/main.5029e853.js",
     "static/media/Waka Flocka Flame - MON.jpg": "/static/media/Waka Flocka Flame - MON.960e09834b7bd286ef9f.jpg",
     "static/media/ED SHEERAN - Broadcast Engineer .jpeg": "/static/media/ED SHEERAN - Broadcast Engineer .c6af01f1f0ad269fb58c.jpeg",
     "static/media/The Terrell Show - MON.png": "/static/media/The Terrell Show - MON.7bc39b5a6055857dcfc9.png",
@@ -18,10 +18,10 @@
     "static/media/1500 OR NOTHIN - MON.jpeg": "/static/media/1500 OR NOTHIN - MON.eb5668058d7fa7a12ef7.jpeg",
     "index.html": "/index.html",
     "main.dc4d6ff2.css.map": "/static/css/main.dc4d6ff2.css.map",
-    "main.0621cb3f.js.map": "/static/js/main.0621cb3f.js.map"
+    "main.5029e853.js.map": "/static/js/main.5029e853.js.map"
   },
   "entrypoints": [
     "static/css/main.dc4d6ff2.css",
-    "static/js/main.0621cb3f.js"
+    "static/js/main.5029e853.js"
   ]
 }
