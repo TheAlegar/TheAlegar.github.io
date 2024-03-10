@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dc4d6ff2.css",
-    "main.js": "/static/js/main.94e5b269.js",
+    "main.js": "/static/js/main.4b5ed817.js",
     "static/media/cover.jpeg": "/static/media/cover.8dad12775675a7255940.jpeg",
     "static/media/LOLLAPALOOZA.jpeg": "/static/media/LOLLAPALOOZA.0de4ae9e2c6f7c34d995.jpeg",
     "static/media/BLXST B4YG TOUR.png": "/static/media/BLXST B4YG TOUR.9e8b0ccdfbda84f9357c.png",
@@ -20,16 +20,17 @@
     "static/media/KYLE - MON.jpeg": "/static/media/KYLE - MON.14e7da0e287da0c85c90.jpeg",
     "static/media/CKay - FOH _ MON.jpeg": "/static/media/CKay - FOH _ MON.dbea4a7e2ffeca008b4e.jpeg",
     "static/media/Kalan.FrFr - MON _ PB.jpeg": "/static/media/Kalan.FrFr - MON _ PB.19a018c1f9f664d981fe.jpeg",
+    "static/media/Logo.png": "/static/media/Logo.87d149bb094aa6d4d361.png",
     "static/media/AAYANNA - MON _ PB.jpeg": "/static/media/AAYANNA - MON _ PB.1289c11f553919321a34.jpeg",
     "static/media/Bino Rideaux - MON _ PB.jpeg": "/static/media/Bino Rideaux - MON _ PB.bae509dd09306de35671.jpeg",
     "static/media/AUGUST 08 - MON _ PB.jpeg": "/static/media/AUGUST 08 - MON _ PB.86ec6bf722675e5f10b3.jpeg",
     "static/media/1500 OR NOTHIN - MON.jpeg": "/static/media/1500 OR NOTHIN - MON.eb5668058d7fa7a12ef7.jpeg",
     "index.html": "/index.html",
     "main.dc4d6ff2.css.map": "/static/css/main.dc4d6ff2.css.map",
-    "main.94e5b269.js.map": "/static/js/main.94e5b269.js.map"
+    "main.4b5ed817.js.map": "/static/js/main.4b5ed817.js.map"
   },
   "entrypoints": [
     "static/css/main.dc4d6ff2.css",
-    "static/js/main.94e5b269.js"
+    "static/js/main.4b5ed817.js"
   ]
 }
