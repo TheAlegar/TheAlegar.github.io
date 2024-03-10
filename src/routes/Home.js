@@ -17,14 +17,14 @@ export default function Home() {
     <Paper
       sx={{
         position: 'relative',
-        backgroundColor: 'grey.800',
-        color: '#fff',
-        mb: 1,
+        // backgroundColor: 'grey.800',
+        // color: '#fff',
+        // mb: 1,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         backgroundImage: `url(${image})`,
-        height: '1100px',
+        height: '1200px',
       }}
     >
       <Box

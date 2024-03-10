@@ -3,13 +3,16 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import {Box}  from "@mui/material";
 
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { makeStyles } from '@material-ui/styles';
 
 import {  ThemeProvider, createTheme, alpha, getContrastRatio } from '@mui/material/styles';
 
 import {Link as RouterLink } from "react-router-dom"
+import logo from './Logo.png'
 
 
 
@@ -27,8 +30,15 @@ const theme = createTheme({
   },
 });
 
+const useStyles = makeStyles({
+    logo: {
+      maxWidth: 90,
+    },
+  });
+
 
 export default function Navbar() {
+      const classes = useStyles();
     const [workanchorEl, setWorkAnchorEl] = React.useState(null);
     const [moreanchorEl, setMoreAnchorEl] = React.useState(null);
 
@@ -54,11 +64,12 @@ export default function Navbar() {
         <AppBar
         position="static"
         elevation={0}
-        sx={{ bgcolor: 'violet.dark', borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
+        // sx={{ bgcolor: 'violet.dark', borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
+        style={{ background: 'transparent', boxShadow: 'none'}}
         >
         <Toolbar sx={{ flexWrap: 'wrap' }}>
         <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-            LOGO
+             <img src={logo} alt="Phenom Productions LLC" className={classes.logo} />
         </Typography>
         <nav>
             <Link
@@ -103,13 +114,12 @@ export default function Navbar() {
             component={RouterLink} to="/contact"
             sx={{ my: 1, mx: 1.5 }}
             >
-            Contact ME
+            Contact
             </Link>
         <Link
             aria-controls="more-menu"
             aria-haspopup="true" onClick={handleMoreClick}
             variant="button"
-            href="#"
             color="inherit"
             sx={{ my: 1, mx: 1.5 }}
             >

@@ -40,7 +40,7 @@ export default function Clients() {
       position: 'relative',
       backgroundColor: 'grey.800',
       color: '#fff',
-      mb: 1,
+      // mb: 1,
       // height: '1000px',
     }}
   >
@@ -60,6 +60,7 @@ export default function Clients() {
                 {mode === item && 
                  <ImageListItemBar
                   key={item}
+                  align="center"
                   title={titleFormat(item)}
                 />}
                 </ImageListItem>

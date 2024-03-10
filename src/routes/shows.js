@@ -44,7 +44,7 @@ export default function Shows() {
       position: 'relative',
       backgroundColor: 'grey.800',
       color: '#fff',
-      mb: 1,
+      // mb: 1,
       // height: '1000px',
     }}
   >
