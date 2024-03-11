@@ -5,6 +5,7 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -53,6 +54,14 @@ export default function Contact() {
             margin="normal"
             required
             type="email"
+          />
+          <TextField
+            fullWidth
+            label="Subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            margin="normal"
+            required
           />
           <TextField
             fullWidth

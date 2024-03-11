@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import {Box}  from "@mui/material";
+// import {Box}  from "@mui/material";
 
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -93,6 +93,7 @@ export default function Navbar() {
             aria-controls="works-menu"
             aria-haspopup="true" onClick={handleWorkClick}
             variant="button"
+            component={RouterLink}
             color="inherit"
             sx={{ my: 1, mx: 1.5 }}
             >
@@ -120,6 +121,7 @@ export default function Navbar() {
             aria-controls="more-menu"
             aria-haspopup="true" onClick={handleMoreClick}
             variant="button"
+            component={RouterLink}
             color="inherit"
             sx={{ my: 1, mx: 1.5 }}
             >

@@ -25,13 +25,27 @@ const importAll = (r) => {
 }
 
 const clients = importAll(require.context('./images/clients', false, /\.(png|jpe?g|svg)$/));
+clients.sort(function(a, b) {
+  const orderA = a.split('/static/media/')[1].split(')')[0];
+  const orderB = b.split('/static/media/')[1].split(')')[0];
+  return  orderA - orderB;
+});
+
+
 
 export default function Clients() {
   // const classes = useStyles();
 
   const titleFormat = (title) =>{
     const url = title.split('/static/media/');
-    return url[1].split('-')[0];
+    const nameOrder = url[1].split(') ');
+    return nameOrder[1].split(' - ')[0];
+  }
+  const jobtitleFormat = (title) =>{
+    const url = title.split('/static/media/');
+    const nameOrder = url[1].split(') ');
+    const name = nameOrder[1].split(' - ')[1];
+    return name.split('.')[0];
   }
   const [mode, setMode] = useState('');
   return (
@@ -62,6 +76,7 @@ export default function Clients() {
                   key={item}
                   align="center"
                   title={titleFormat(item)}
+                  subtitle={jobtitleFormat(item)}
                 />}
                 </ImageListItem>
             ))}
