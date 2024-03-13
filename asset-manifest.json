@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c4c9f144.css",
-    "main.js": "/static/js/main.2fa7cdb8.js",
+    "main.js": "/static/js/main.67c3e68e.js",
     "static/media/DAYLIGHT BEACH CLUB.jpeg": "/static/media/DAYLIGHT BEACH CLUB.42fe4dee55c7ba97294e.jpeg",
     "static/media/cover.jpeg": "/static/media/cover.8dad12775675a7255940.jpeg",
     "static/media/LOLLAPALOOZA.jpeg": "/static/media/LOLLAPALOOZA.0de4ae9e2c6f7c34d995.jpeg",
@@ -49,10 +49,10 @@
     "static/media/12) The Terell Show - Monitor Engineer.jpeg": "/static/media/12) The Terell Show - Monitor Engineer.0abdc2833d4869d6dee0.jpeg",
     "index.html": "/index.html",
     "main.c4c9f144.css.map": "/static/css/main.c4c9f144.css.map",
-    "main.2fa7cdb8.js.map": "/static/js/main.2fa7cdb8.js.map"
+    "main.67c3e68e.js.map": "/static/js/main.67c3e68e.js.map"
   },
   "entrypoints": [
     "static/css/main.c4c9f144.css",
-    "static/js/main.2fa7cdb8.js"
+    "static/js/main.67c3e68e.js"
   ]
 }
