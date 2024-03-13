@@ -31,7 +31,7 @@ const theme = createTheme({
 
 const useStyles = makeStyles({
     logo: {
-      maxWidth: 90,
+      maxWidth: 80,
     },
   });
 
@@ -95,6 +95,14 @@ export default function Navbar() {
             sx={{ my: 1, mx: 1.5 }}
             >
             Shows
+            </Link>
+            <Link  
+            variant="button"
+            color="inherit" 
+            component={RouterLink} to="/contact"
+            sx={{ my: 1, mx: 1.5 }}
+            >
+            Contact
             </Link>
             <Link
                 aria-controls="more-menu"
