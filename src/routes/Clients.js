@@ -60,7 +60,7 @@ export default function Clients() {
   >
     <Grid container style={{display:'flex',justifyContent:'center',alignItems:'center'}} >
         <Grid item>
-            <ImageList  cols={5} rowHeight={800}>
+            <ImageList cols={5}>
             {clients.map((item) => (
                 <ImageListItem key={item}  >
                 <img
@@ -77,6 +77,7 @@ export default function Clients() {
                   align="center"
                   title={titleFormat(item)}
                   subtitle={jobtitleFormat(item)}
+                  onMouseOver={() => (setMode(item))}
                 />}
                 </ImageListItem>
             ))}

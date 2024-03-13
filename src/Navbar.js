@@ -3,7 +3,6 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-// import {Box}  from "@mui/material";
 
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -39,16 +38,7 @@ const useStyles = makeStyles({
 
 export default function Navbar() {
       const classes = useStyles();
-    const [workanchorEl, setWorkAnchorEl] = React.useState(null);
     const [moreanchorEl, setMoreAnchorEl] = React.useState(null);
-
-    const handleWorkClick = (event) => {
-        setWorkAnchorEl(event.currentTarget);
-    };
-  
-    const handleWorkClose = () => {
-        setWorkAnchorEl(null);
-    };
 
     const handleMoreClick = (event) => {
         setMoreAnchorEl(event.currentTarget);
@@ -89,54 +79,43 @@ export default function Navbar() {
             About
             </Link>
 
-            <Link
-            aria-controls="works-menu"
-            aria-haspopup="true" onClick={handleWorkClick}
+            <Link  
             variant="button"
-            component={RouterLink}
-            color="inherit"
+            color="inherit" 
+            component={RouterLink} to="/clients"
             sx={{ my: 1, mx: 1.5 }}
             >
-            Works
-        </Link>
-        <Menu
-            id="works-menu"
-            anchorEl={workanchorEl}
-            keepMounted
-            open={Boolean(workanchorEl)}
-            onClose={handleWorkClose}
-        >
-            <MenuItem component={RouterLink} to="/clients" onClick={handleWorkClose}>Clients</MenuItem>
-            <MenuItem component={RouterLink} to="/shows" onClick={handleWorkClose}>Shows</MenuItem>
-        </Menu>
-        <Link
-            variant="button"
-            color="inherit"
-            component={RouterLink} to="/contact"
-            sx={{ my: 1, mx: 1.5 }}
-            >
-            Contact
+            Clients
             </Link>
-        <Link
-            aria-controls="more-menu"
-            aria-haspopup="true" onClick={handleMoreClick}
+
+            <Link  
             variant="button"
-            component={RouterLink}
-            color="inherit"
+            color="inherit" 
+            component={RouterLink} to="/shows"
             sx={{ my: 1, mx: 1.5 }}
             >
-            More
-        </Link>
-        <Menu
-            id="more-menu"
-            anchorEl={moreanchorEl}
-            keepMounted
-            open={Boolean(moreanchorEl)}
-            onClose={handleMoreClose}
-        >
-            <MenuItem component={RouterLink} to="/media" onClick={handleMoreClose}>Media</MenuItem>
-            <MenuItem  component={RouterLink} to="/extra" onClick={handleMoreClose}>Extra</MenuItem>
-        </Menu>
+            Shows
+            </Link>
+            <Link
+                aria-controls="more-menu"
+                aria-haspopup="true" onClick={handleMoreClick}
+                variant="button"
+                component={RouterLink}
+                color="inherit"
+                sx={{ my: 1, mx: 1.5 }}
+                >
+                More
+            </Link>
+            <Menu
+                id="more-menu"
+                anchorEl={moreanchorEl}
+                keepMounted
+                open={Boolean(moreanchorEl)}
+                onClose={handleMoreClose}
+            >
+                <MenuItem component={RouterLink} to="/media" onClick={handleMoreClose}>Media</MenuItem>
+                <MenuItem  component={RouterLink} to="/extra" onClick={handleMoreClose}>Extra</MenuItem>
+            </Menu>
         </nav>
         </Toolbar>
         </AppBar>

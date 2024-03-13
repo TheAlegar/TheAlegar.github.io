@@ -6,8 +6,9 @@ import ImageListItem from '@mui/material/ImageListItem';
 // import ImageListItemBar from '@mui/material/ImageListItemBar';
 import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
-import Dialog from '@mui/material/Dialog';
 import { makeStyles } from '@material-ui/styles';
+import Lightbox from 'react-image-lightbox'
+import 'react-image-lightbox/style.css'
 
 const importAll = (r) => {
     return r.keys().map(r);
@@ -21,7 +22,7 @@ export default function Shows() {
 
   const useStyles = makeStyles({
     root: {
-      maxWidth: 310,
+      // maxWidth: 310,
       transition: "transform 0.15s ease-in-out",
       "&:hover": { transform: "scale3d(1.05, 1.05, 1)" },
     },
@@ -33,10 +34,24 @@ export default function Shows() {
   //   return url[1].split('.')[0];
   // }
 
-  const handleClose = () =>{
-    setMode('')
+  const handleShowsClose = () =>{
+    setShowsOpen(false);
   }
-  const [mode, setMode] = useState('');
+  const handleFestivalClose = () =>{
+    setFestivalOpen(false);
+  }
+  const handleShowsOpen = (index) =>{
+    setShowsOpen(true);
+    setIndex(index)
+  }
+  const handlefestivalOpen = (index) =>{
+    setFestivalOpen(true);
+    setIndex(index)
+  }
+  // const [mode, setMode] = useState('');
+  const [showsOpen, setShowsOpen] = useState(false);
+  const [festivalOpen, setFestivalOpen] = useState(false);
+  const [test, setIndex] = useState(0);
   const classes = useStyles();
   return (
     <Paper
@@ -48,37 +63,49 @@ export default function Shows() {
       // height: '1000px',
     }}
   >
-    <Grid container>
+    <Grid container  style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
         <Grid item >
-            <Typography variant="h2" gutterBottom>
+            <Typography variant="h2" align="center" >
               SHOWS
             </Typography>
-            <ImageList sx={{ width: 1000, height: 1000 }} cols={3} rowHeight={300}>
-            {shows.map((item) => (
+            <ImageList   cols={6}>
+            {shows.map((item, index) => (
+              <>
                 <ImageListItem key={item}>
-                <img 
-                    srcSet={`${item}`}
-                    src={`${item}`}
-                    loading="lazy"
-                    alt=''
-                    className={classes.root} 
-                    onClick={() => (setMode(item))}
-                /> 
-                {/* {mode === item && 
-                 <ImageListItemBar
-                  key={item}
-                  title={titleFormat(item)}
-                />} */}
+                  <img 
+                      src={`${item}`}
+                      loading="lazy"
+                      alt=''
+                      className={classes.root} 
+                      onClick={() => (handleShowsOpen(index))}
+                  />
+                  {/* {mode === item && 
+                  <ImageListItemBar
+                    key={item}
+                    title={titleFormat(item)}
+                  />} */}
                 </ImageListItem>
+                {showsOpen  && 
+                  <Lightbox
+                  mainSrc={shows[test]}
+                  nextSrc={shows[(test + 1) % shows.length]}
+                  prevSrc={shows[(test + shows.length - 1) % shows.length]}
+                  onCloseRequest={handleShowsClose}
+                  onMoveNextRequest={() => setIndex((test + 1) % shows.length)}
+                  onMovePrevRequest={() => setIndex((test + shows.length - 1) % shows.length)}
+                  />
+                }
+                </>
             ))}
             </ImageList>
         </Grid>
         <Grid item>
-            <Typography variant="h2" gutterBottom>
+            <Typography variant="h2" align="center"> 
               FESTIVALS
             </Typography>
-            <ImageList sx={{ width: 1000, height: 1000 }} cols={3} rowHeight={300}>
-            {festivals.map((item) => (
+            <ImageList  cols={6}>
+            {festivals.map((item,index) => (
+               <>
                 <ImageListItem key={item}>
                 <img
                     srcSet={`${item}`}
@@ -86,7 +113,7 @@ export default function Shows() {
                     loading="lazy"
                     alt=''
                     className={classes.root} 
-                    onClick={() => (setMode(item))}
+                    onClick={() => (handlefestivalOpen(index))}
                 /> 
                 {/* {mode === item && 
                  <ImageListItemBar
@@ -94,10 +121,21 @@ export default function Shows() {
                   title={titleFormat(item)}
                 />} */}
                 </ImageListItem>
+                {festivalOpen  && 
+                  <Lightbox
+                  mainSrc={festivals[test]}
+                  nextSrc={festivals[(test + 1) % festivals.length]}
+                  prevSrc={festivals[(test + festivals.length - 1) % festivals.length]}
+                  onCloseRequest={handleFestivalClose}
+                  onMoveNextRequest={() => setIndex((test + 1) % festivals.length)}
+                  onMovePrevRequest={() => setIndex((test + festivals.length - 1) % festivals.length)}
+                  />
+                }
+                </>
             ))}
             </ImageList>
         </Grid>
-        <Dialog
+        {/* <Dialog
           open={mode !== ''}
           onClose={handleClose}
           hasCloseButton
@@ -108,7 +146,7 @@ export default function Shows() {
             src={`${mode}`}
             alt=""
           />
-        </Dialog>
+        </Dialog> */}
     </Grid>
     </Paper>
   );

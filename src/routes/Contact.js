@@ -78,11 +78,15 @@ export default function Contact() {
             type="submit"
             sx={{
               mt: 2,
-              backgroundColor: "#000",
-              color: "#fff",
-              "&:hover": {
-                backgroundColor: "#111",
+              backgroundColor: "#fff",
+               color: "#111",
+                "&:hover": {
+                backgroundColor: "#cccc",
               },
+              // color: "#fff",
+              // "&:hover": {
+              //   backgroundColor: "#111",
+              // },
             }}
           >
             Submit
