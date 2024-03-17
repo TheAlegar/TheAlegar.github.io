@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.c4c9f144.css",
-    "main.js": "/static/js/main.67c3e68e.js",
+    "main.js": "/static/js/main.1ab58ebc.js",
     "static/media/DAYLIGHT BEACH CLUB.jpeg": "/static/media/DAYLIGHT BEACH CLUB.42fe4dee55c7ba97294e.jpeg",
     "static/media/cover.jpeg": "/static/media/cover.8dad12775675a7255940.jpeg",
     "static/media/LOLLAPALOOZA.jpeg": "/static/media/LOLLAPALOOZA.0de4ae9e2c6f7c34d995.jpeg",
     "static/media/MUSIKFEST.jpeg": "/static/media/MUSIKFEST.bde3edeb54caaa95d518.jpeg",
     "static/media/BLXST B4YG TOUR.png": "/static/media/BLXST B4YG TOUR.9e8b0ccdfbda84f9357c.png",
+    "static/media/CKay.jpg": "/static/media/CKay.d1d1a264c7cc53286be7.jpg",
     "static/media/OKEECHOBEE FESTIVAL.jpeg": "/static/media/OKEECHOBEE FESTIVAL.00723624941bc5ca4821.jpeg",
     "static/media/13) Waka Flocka Flame - Monitor Engineer.jpg": "/static/media/13) Waka Flocka Flame - Monitor Engineer.960e09834b7bd286ef9f.jpg",
     "static/media/EMOTIONAL ORANGES PF TOUR.jpeg": "/static/media/EMOTIONAL ORANGES PF TOUR.96f6451367e153b69f09.jpeg",
@@ -22,6 +23,7 @@
     "static/media/ROLLING LOUD ROTTERDAM.jpeg": "/static/media/ROLLING LOUD ROTTERDAM.6202ea3ea68ef77e9c14.jpeg",
     "static/media/SOMETHING IN THE WATER.jpg": "/static/media/SOMETHING IN THE WATER.8f6aab19928270a2bbd0.jpg",
     "static/media/GOOD PEOPLE TOUR.jpeg": "/static/media/GOOD PEOPLE TOUR.1f567cd900aa3aee8130.jpeg",
+    "static/media/15) Emotional Oranges - Front of House, Monitor and Playback Engineer.jpg": "/static/media/15) Emotional Oranges - Front of House, Monitor and Playback Engineer.d5fd26875e242cc6c08a.jpg",
     "static/media/PURE IMAGINATION FESTIVAL.jpeg": "/static/media/PURE IMAGINATION FESTIVAL.42ac1d480091a57187bf.jpeg",
     "static/media/2) Ed Sheeran - Broadcast Engineer.jpeg": "/static/media/2) Ed Sheeran - Broadcast Engineer.c6af01f1f0ad269fb58c.jpeg",
     "static/media/9) JoJo - Monitor Engineer.jpeg": "/static/media/9) JoJo - Monitor Engineer.c8040676246658e6be37.jpeg",
@@ -37,6 +39,7 @@
     "static/media/DRAIS.jpeg": "/static/media/DRAIS.4cb6ab3a56547f172b70.jpeg",
     "static/media/CALGARY MUSIC FESTIVAL.jpeg": "/static/media/CALGARY MUSIC FESTIVAL.63528a3476a4cbc27a9b.jpeg",
     "static/media/16) Bino Rideaux - Monitor Engineer.jpeg": "/static/media/16) Bino Rideaux - Monitor Engineer.ff76f0e98d39b5b91a13.jpeg",
+    "static/media/WIRELESS '23.jpg": "/static/media/WIRELESS '23.c7a0493a8a9c6cfcb423.jpg",
     "static/media/UNTOLD FESTIVAL.jpeg": "/static/media/UNTOLD FESTIVAL.c4ccf3681410adbb0d38.jpeg",
     "static/media/AUGUST 08.jpeg": "/static/media/AUGUST 08.f26da3923fe9ed51a95e.jpeg",
     "static/media/7) Moneybagg Yo - Front of House Engineer.jpeg": "/static/media/7) Moneybagg Yo - Front of House Engineer.8668fb617f489430eb18.jpeg",
@@ -46,13 +49,13 @@
     "static/media/6) Majid Jordan - Front of House and Monitor Engineer.jpg": "/static/media/6) Majid Jordan - Front of House and Monitor Engineer.26701c7afc5865575d08.jpg",
     "static/media/18) Aayanna - Monitor and Playback Engineer.jpeg": "/static/media/18) Aayanna - Monitor and Playback Engineer.1289c11f553919321a34.jpeg",
     "static/media/Logo.png": "/static/media/Logo.48f6c5106dc3b07e2c17.png",
-    "static/media/12) The Terell Show - Monitor Engineer.jpeg": "/static/media/12) The Terell Show - Monitor Engineer.0abdc2833d4869d6dee0.jpeg",
+    "static/media/12) The Terrell Show - Monitor Engineer.jpeg": "/static/media/12) The Terrell Show - Monitor Engineer.0abdc2833d4869d6dee0.jpeg",
     "index.html": "/index.html",
     "main.c4c9f144.css.map": "/static/css/main.c4c9f144.css.map",
-    "main.67c3e68e.js.map": "/static/js/main.67c3e68e.js.map"
+    "main.1ab58ebc.js.map": "/static/js/main.1ab58ebc.js.map"
   },
   "entrypoints": [
     "static/css/main.c4c9f144.css",
-    "static/js/main.67c3e68e.js"
+    "static/js/main.1ab58ebc.js"
   ]
 }
