@@ -58,7 +58,7 @@ export default function Navbar() {
         style={{ background: 'transparent', boxShadow: 'none'}}
         >
         <Toolbar sx={{ flexWrap: 'wrap' }}>
-        <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" color="inherit" noWrap sx={{  my: 1, flexGrow: 1 }}>
              <img src={logo} alt="Phenom Productions LLC" className={classes.logo} />
         </Typography>
         <nav>

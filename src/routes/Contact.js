@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { TextField, Button, Typography, Box } from "@mui/material";
+import { TextField, Button, Typography, Box, InputLabel,
+  MenuItem,FormControl,Select} from "@mui/material";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -10,6 +11,13 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
+  const [reference, setReference] = useState('');
+
+  const handleChange = (event) => {
+    setReference(event.target.value);
+  };
+
 
   return (
     <Box
@@ -38,6 +46,22 @@ export default function Contact() {
           Contact Us
         </Typography>
         <form onSubmit={handleSubmit}>
+        <FormControl sx={{ minWidth: 250 }}>
+            <InputLabel id="simple-select-autowidth-label">How did you hear about us</InputLabel>
+            <Select
+              labelId="simple-select-autowidth-label"
+              id="simple-select-autowidth"
+              value={reference}
+              onChange={handleChange}
+              label="How did you hear about us"
+            >          
+             <MenuItem value=""><em>None</em></MenuItem>
+              <MenuItem value={'Previous Customer'}>Previous Customer</MenuItem>
+              <MenuItem value={'Referral'}>Referral</MenuItem>
+              <MenuItem value={'Social Media'}>Social Media</MenuItem>
+              <MenuItem value={'Search Engine'}>Search Engine</MenuItem>
+            </Select>
+          </FormControl>
           <TextField
             fullWidth
             label="Name"
