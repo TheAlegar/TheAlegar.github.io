@@ -91,10 +91,10 @@ export default function Navbar() {
             <Link  
             variant="button"
             color="inherit" 
-            component={RouterLink} to="/shows"
+            component={RouterLink} to="/resume"
             sx={{ my: 1, mx: 1.5 }}
             >
-            Shows
+            Resume
             </Link>
             <Link  
             variant="button"

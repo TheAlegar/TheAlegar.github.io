@@ -25,7 +25,7 @@ export default function Contact() {
         // display: "flex",
         // alignItems: "center",
         // justifyContent: "center",
-        // height: "100vh",
+        height: "80vh",
       }}
     >
       <Box
@@ -46,7 +46,7 @@ export default function Contact() {
           Contact Us
         </Typography>
         <form onSubmit={handleSubmit}>
-        <FormControl sx={{ minWidth: 250 }}>
+        <FormControl sx={{ minWidth: 600 }}>
             <InputLabel id="simple-select-autowidth-label">How did you hear about us</InputLabel>
             <Select
               labelId="simple-select-autowidth-label"

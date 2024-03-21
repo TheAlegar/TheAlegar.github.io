@@ -67,7 +67,7 @@ export default function Clients() {
                     srcSet={`${item}`}
                     src={`${item}`}
                     loading="lazy"
-                    alt=''
+                    alt={titleFormat(item)}
                     onMouseOver={() => (setMode(item))}
                     onMouseLeave={() => (setMode(''))}
                 /> 

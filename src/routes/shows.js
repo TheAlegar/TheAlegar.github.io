@@ -48,6 +48,11 @@ export default function Shows() {
     setFestivalOpen(true);
     setIndex(index)
   }
+
+  const titleFormat = (title) =>{
+    const url = title.split('/static/media/');
+    return url[1].split('.')[0];
+  }
   // const [mode, setMode] = useState('');
   const [showsOpen, setShowsOpen] = useState(false);
   const [festivalOpen, setFestivalOpen] = useState(false);
@@ -75,7 +80,7 @@ export default function Shows() {
                   <img 
                       src={`${item}`}
                       loading="lazy"
-                      alt=''
+                      alt={titleFormat(item)}
                       className={classes.root} 
                       onClick={() => (handleShowsOpen(index))}
                   />
@@ -111,7 +116,7 @@ export default function Shows() {
                     srcSet={`${item}`}
                     src={`${item}`}
                     loading="lazy"
-                    alt=''
+                    alt={titleFormat(item)}
                     className={classes.root} 
                     onClick={() => (handlefestivalOpen(index))}
                 /> 
